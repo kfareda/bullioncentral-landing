@@ -1,176 +1,131 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <title>Bullion Central — Australian Gold & Silver Bullion</title>
-  <meta name="description" content="Independent, online-first bullion dealer offering gold and silver bullion to Australian buyers with clear AUD pricing.">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-
-  <style>
-    *, *::before, *::after {
-      box-sizing: border-box;
-    }
-
-    html, body {
-      margin: 0;
-      padding: 0;
-      height: 100%;
-    }
-
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background-color: #f3f4f6;
-      color: #111;
-      overflow: hidden; /* critical */
-    }
-
-    .container {
-      display: flex;
-      flex-direction: column;
-      height: 100dvh; /* mobile-safe viewport */
-    }
-
-    .panel-light,
-    .panel-dark {
-      padding: 32px 24px;
-    }
-
-    .panel-light {
-      background-color: #f6f7f8;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .panel-dark {
-      background-color: #1e2330;
-      color: #cfd3d8;
-      flex: 1;
-      display: flex;
-      align-items: center;
-    }
-
-    h1 {
-      font-size: 32px;
-      font-weight: 600;
-      letter-spacing: -0.5px;
-      margin: 0 0 16px 0;
-    }
-
-    p {
-      font-size: 16px;
-      line-height: 1.7;
-      color: #444;
-      margin: 0 0 28px 0;
-      max-width: 520px;
-    }
-
-    .cta {
-      display: inline-block;
-      font-size: 15px;
-      font-weight: 500;
-      color: #111;
-      text-decoration: none;
-      padding: 14px 22px;
-      border: 1px solid #cfd3d8;
-      border-radius: 4px;
-      background-color: #ffffff;
-      width: fit-content;
-    }
-
-    .muted {
-      margin-top: 40px;
-      font-size: 14px;
-      color: #777;
-    }
-
-    .principles {
-      max-width: 420px;
-      border-left: 2px solid #2c3344;
-      padding-left: 20px;
-    }
-
-    .principles-title {
-      font-size: 13px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: #8a92a6;
-      margin-bottom: 16px;
-    }
-
-    .principles ul {
-      list-style: none;
-      padding: 0;
-      margin: 0;
-      font-size: 15px;
-      line-height: 1.8;
-    }
-
-    /* DESKTOP */
-    @media (min-width: 900px) {
-      body {
-        overflow: hidden;
-      }
-
-      .container {
-        flex-direction: row;
-      }
-
-      .panel-light,
-      .panel-dark {
-        padding: 64px;
-      }
-
-      h1 {
-        font-size: 44px;
-      }
-
-      p {
-        font-size: 18px;
-      }
-    }
-  </style>
+  <meta name="description" content="Independent, online-first Australian bullion dealer offering gold and silver bullion with transparent AUD pricing." />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
 </head>
 
-<body>
+<body style="
+  margin:0;
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
+  background:#f3f4f6;
+  color:#111;
+  height:100dvh;
+  overflow:hidden;
+">
 
-  <main class="container">
+<main style="
+  display:flex;
+  flex-direction:column;
+  height:100%;
+">
 
-    <!-- LIGHT PANEL -->
-    <section class="panel-light">
-      <h1>Bullion Central</h1>
+  <!-- TOP / LIGHT PANEL -->
+  <section style="
+    flex:1;
+    background:#f6f7f8;
+    padding:40px 20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+  ">
 
-      <p>
-        An independent, online-first bullion dealer providing Australian buyers
-        with access to gold and silver bullion through transparent pricing,
-        accurate product descriptions, and straightforward dealing.
-      </p>
+    <h1 style="
+      font-size:32px;
+      font-weight:600;
+      letter-spacing:-0.5px;
+      margin:0 0 16px;
+    ">
+      Bullion Central
+    </h1>
 
-      <a href="/buy-gold-silver-australia" class="cta">
-        Buy Gold &amp; Silver Bullion →
+    <p style="
+      font-size:16px;
+      line-height:1.7;
+      color:#444;
+      max-width:520px;
+      margin:0 0 28px;
+    ">
+      An independent, online-first Australian bullion dealer providing access to
+      gold and silver bullion through transparent pricing and clearly described products.
+    </p>
+
+    <a href="/buy-gold-silver-australia"
+       style="
+         display:inline-block;
+         font-size:15px;
+         font-weight:500;
+         color:#111;
+         text-decoration:none;
+         padding:14px 22px;
+         border:1px solid #cfd3d8;
+         border-radius:4px;
+         background:#fff;
+         width:fit-content;
+       ">
+      Buy Gold &amp; Silver Bullion →
+    </a>
+
+    <!-- LEGITIMACY LINKS -->
+    <div style="
+      margin-top:32px;
+      font-size:14px;
+      color:#666;
+    ">
+      <a href="/about" style="color:#666;text-decoration:none;border-bottom:1px solid #bbb;">
+        About Bullion Central
       </a>
+    </div>
 
-      <div class="muted">
-        Store launching soon. Enquiries welcome.
+  </section>
+
+  <!-- BOTTOM / DARK PANEL -->
+  <section style="
+    flex:1;
+    background:#1e2330;
+    color:#cfd3d8;
+    padding:36px 20px;
+    display:flex;
+    align-items:center;
+  ">
+
+    <div style="
+      max-width:420px;
+      border-left:2px solid #2c3344;
+      padding-left:20px;
+    ">
+
+      <div style="
+        font-size:13px;
+        letter-spacing:1px;
+        text-transform:uppercase;
+        color:#8a92a6;
+        margin-bottom:14px;
+      ">
+        Operating Principles
       </div>
-    </section>
 
-    <!-- DARK PANEL -->
-    <section class="panel-dark">
-      <div class="principles">
-        <div class="principles-title">Operating Principles</div>
-        <ul>
-          <li>Transparent AUD pricing</li>
-          <li>Independently tested metals</li>
-          <li>No bulk or mystery stock</li>
-          <li>Clear product descriptions</li>
-          <li>Australia-wide service</li>
-        </ul>
-      </div>
-    </section>
+      <ul style="
+        list-style:none;
+        padding:0;
+        margin:0;
+        font-size:15px;
+        line-height:1.8;
+      ">
+        <li>Transparent AUD pricing</li>
+        <li>Independently tested metals</li>
+        <li>No bulk or mystery stock</li>
+        <li>Clear product descriptions</li>
+        <li>Australia-wide service</li>
+      </ul>
 
-  </main>
+    </div>
+
+  </section>
+
+</main>
 
 </body>
 </html>
